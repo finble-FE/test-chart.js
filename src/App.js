@@ -1,7 +1,8 @@
 import "./App.css";
+import ChartEx from "./chart";
 
 function App() {
-  return <div className="App"></div>;
+  return <ChartEx />;
 }
 
 export default App;
