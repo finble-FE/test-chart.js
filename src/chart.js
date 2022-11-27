@@ -2,23 +2,27 @@ import styled from "styled-components";
 import { Chart as ChartJS } from "chart.js/auto"; //미사용하지만 안적어주면 오류남
 import { Line } from "react-chartjs-2";
 
+let labels = [
+  "2013",
+  "2014",
+  "2015",
+  "2016",
+  "2017",
+  "2018",
+  "2019",
+  "2020",
+  "2021",
+  "2022",
+];
+
 const data = {
-  labels: [
-    "2013",
-    "2014",
-    "2015",
-    "2016",
-    "2017",
-    "2018",
-    "2019",
-    "2020",
-    "2021",
-    "2022",
-  ],
+  labels: labels,
   datasets: [
     {
       type: "line",
       label: "Dataset 1",
+      fill: false, // 그래프 색깔 칠하기
+      pointRadius: [0, 0, 0, 0, 0, 0, 0], //포인트 크기
       borderColor: "rgb(54, 162, 235)",
       borderWidth: 2,
       data: [1, 2, 3, 6, 8, 3, 6, 8, 9, 10],
@@ -27,6 +31,8 @@ const data = {
     {
       type: "line",
       label: "Dataset 2",
+      fill: false, // 그래프 색깔 칠하기
+      pointRadius: [1, 1, 1, 1, 1, 1, 1], //포인트 크기
       backgroundColor: "rgb(255, 99, 132)",
       data: [2, 5, 1, 4, 7, 2, 5, 3, 7, 8],
       borderColor: "red",
@@ -35,6 +41,8 @@ const data = {
     {
       type: "line",
       label: "Dataset 3",
+      fill: false, // 그래프 색깔 칠하기
+      pointRadius: [2, 2, 2, 2, 2, 2, 2], //포인트 크기
       backgroundColor: "rgb(75, 192, 192)",
       data: [3, 2, 7, 5, 2, 4, 1, 3, 6, 8],
       yAxisID: "y_sub",
