@@ -42,7 +42,7 @@ const data = {
       type: "line",
       label: "Dataset 3",
       fill: false, // 그래프 색깔 칠하기
-      pointRadius: [2, 2, 2, 2, 2, 2, 2], //포인트 크기
+      pointRadius: [3, 3, 3, 3, 3, 3, 3], //포인트 크기
       backgroundColor: "rgb(75, 192, 192)",
       data: [3, 2, 7, 5, 2, 4, 1, 3, 6, 8],
       yAxisID: "y_sub",
